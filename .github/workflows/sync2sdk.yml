@@ -1,0 +1,30 @@
+# This is a basic workflow to help you get started with Actions
+
+name: update qingcloud sdk
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  push:
+    branches: [ api-specs-sync ]
+  pull_request:
+    branches: [ api-specs-sync ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: update qingcloud sdk
+        uses: qingcloud-cps-robot/create-pr-for-qingcloud-sdk@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          destination-repository-username: 'qingcloud-cps-robot'
+          user-email: cps-robot@yunify.com
+          user-name: cps-robot
+          commit-message: "sync sdk with api specs"
+          api-specs-branch: "api-specs-sync"
