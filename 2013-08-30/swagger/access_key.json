@@ -9,8 +9,8 @@
       "tags": [
         "Accesskey"
       ],
-      "operationId": "DescribeAccessKeys",
-      "summary": "DescribeAccessKeys",
+      "operationId": "DescribeAccessKey",
+      "summary": "DescribeAccessKey",
       "externalDocs": {
         "url": ""
       },
