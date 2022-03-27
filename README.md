@@ -77,7 +77,7 @@ $ npm test # or `npm t`
 2. Create your feature branch (`git checkout -b new-feature`)
 3. Commit your changes (`git commit -asm 'Add some feature'`)
 4. Push to the branch (`git push origin new-feature`)
-5. Create a new Pull Request
+5. Create a new Pull Request.
 
 ## LICENSE
 
