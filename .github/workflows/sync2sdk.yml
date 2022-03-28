@@ -25,6 +25,6 @@ jobs:
         with:
           destination-repository-username: 'qingcloud-cps-robot'
           user-email: cps-robot@yunify.com
-          user-name: cps-robot
+          user-name: qingcloud-cps-robot
           commit-message: "sync sdk with api specs"
           api-specs-branch: "api-specs-sync"
