@@ -79,7 +79,6 @@ $ npm test # or `npm t`
 4. Push to the branch (`git push origin new-feature`)
 5. Create a new Pull Request
 
-
 ## LICENSE
 
 [The Apache License (Version 2.0, January 2004)](http://www.apache.org/licenses/LICENSE-2.0.html).
